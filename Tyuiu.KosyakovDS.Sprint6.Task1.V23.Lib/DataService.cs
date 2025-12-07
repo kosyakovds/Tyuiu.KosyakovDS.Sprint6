@@ -12,7 +12,7 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task1.V23.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                double res = Math.Sin(x) + (2 * x) / 3 - Math.Cos(x) * 4 * x;
+                double res = Math.Sin(x) + (2.0 * x) / 3.0 - Math.Cos(x) * 4.0 * x;
 
                 mass[index] = Math.Round(res, 2);
                 index++;
