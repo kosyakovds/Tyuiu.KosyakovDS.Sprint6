@@ -10,7 +10,7 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task2.V13.Test
         {
             DataService ds = new DataService();
             double[] res = ds.GetMassFunction(-5, 5);
-            double[] wait = { 3.3, -12.37, -14.02, -5.57, 0.65, 0.0, -0.65, 5.57, 14.02, 12.37, -3.3 };
+            double[] wait = { 3.63, -11.7, -14.02, -5.24, 1.32, 0.0, -1.32, 5.24, 14.02, 11.7, -3.63 };
             CollectionAssert.AreEqual(res, wait);
         }
     }
