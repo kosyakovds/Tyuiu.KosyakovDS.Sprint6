@@ -52,7 +52,7 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18
         {
             try
             {
-                string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask4.txt";
+                string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask4.txt");
                 File.WriteAllText(path, textBoxResult_KDS.Text);
 
                 DialogResult dialogResult = MessageBox.Show($"Файл {path} сохранен успешно!\n Открыть его в блокноте?", "Сообщение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
