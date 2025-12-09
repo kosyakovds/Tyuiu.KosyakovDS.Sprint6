@@ -271,8 +271,8 @@
         private Panel panelRight_KDS;
         private TextBox textBoxResult_KDS;
         private TextBox textBoxTask_KDS;
-        private Label labelStopStep_KDS;
         private Label labelStartStep_KDS;
+        private Label labelStopStep_KDS;
         private TextBox textBoxStopStep_KDS;
         private TextBox textBoxStartStep_KDS;
     }
