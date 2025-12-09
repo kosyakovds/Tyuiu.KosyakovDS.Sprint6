@@ -15,8 +15,8 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18
         {
             try
             {
-                int startStep = Convert.ToInt32(textBoxStartStep_KDS);
-                int stopStep = Convert.ToInt32(textBoxStopStep_KDS);
+                int startStep = Convert.ToInt32(textBoxStartStep_KDS.Text);
+                int stopStep = Convert.ToInt32(textBoxStopStep_KDS.Text);
 
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
 
@@ -67,7 +67,7 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18
             }
             catch
             {
-                MessageBox.Show("—бой при сохранении файла", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("—бой при сохранении файла", "ќшибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

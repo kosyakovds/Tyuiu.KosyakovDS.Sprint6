@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             groupBoxTask_KDS = new GroupBox();
             textBoxTask_KDS = new TextBox();
             groupBoxInPutData_KDS = new GroupBox();
@@ -78,8 +78,8 @@
             // groupBoxInPutData_KDS
             // 
             groupBoxInPutData_KDS.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBoxInPutData_KDS.Controls.Add(labelStopStep_KDS);
             groupBoxInPutData_KDS.Controls.Add(labelStartStep_KDS);
+            groupBoxInPutData_KDS.Controls.Add(labelStopStep_KDS);
             groupBoxInPutData_KDS.Controls.Add(textBoxStopStep_KDS);
             groupBoxInPutData_KDS.Controls.Add(textBoxStartStep_KDS);
             groupBoxInPutData_KDS.Location = new Point(462, 5);
@@ -182,28 +182,28 @@
             // chartFunction_KDS
             // 
             chartFunction_KDS.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            chartArea2.Name = "ChartArea1";
-            chartFunction_KDS.ChartAreas.Add(chartArea2);
+            chartArea6.Name = "ChartArea1";
+            chartFunction_KDS.ChartAreas.Add(chartArea6);
             chartFunction_KDS.Location = new Point(6, 6);
             chartFunction_KDS.Name = "chartFunction_KDS";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Name = "Series1";
-            chartFunction_KDS.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series6.Name = "Series1";
+            chartFunction_KDS.Series.Add(series6);
             chartFunction_KDS.Size = new Size(812, 424);
             chartFunction_KDS.TabIndex = 6;
             chartFunction_KDS.Text = "chart1";
-            title2.Font = new Font("MS Reference Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            title2.Name = "Title1";
-            title2.Text = "График функции";
-            chartFunction_KDS.Titles.Add(title2);
+            title6.Font = new Font("MS Reference Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            title6.Name = "Title1";
+            title6.Text = "График функции";
+            chartFunction_KDS.Titles.Add(title6);
             // 
             // panelTop_KDS
             // 
             panelTop_KDS.BackColor = Color.LightSalmon;
             panelTop_KDS.Controls.Add(buttonHelp_KDS);
-            panelTop_KDS.Controls.Add(buttonDone_KDS);
             panelTop_KDS.Controls.Add(groupBoxInPutData_KDS);
+            panelTop_KDS.Controls.Add(buttonDone_KDS);
             panelTop_KDS.Controls.Add(groupBoxTask_KDS);
             panelTop_KDS.Controls.Add(buttonSave_KDS);
             panelTop_KDS.Dock = DockStyle.Top;
