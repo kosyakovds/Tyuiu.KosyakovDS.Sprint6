@@ -1,27 +1,19 @@
-﻿namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18.Test
+﻿using Tyuiu.KosyakovDS.Sprint6.Task4.V18.Lib;
+
+namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18.Test
 {
     [TestClass]
-    public class DataServiceTest : PageTest
+    public class DataServiceTest
     {
         [TestMethod]
-        public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingToTheIntroPage()
+        public void CheckValid()
         {
-            await Page.GotoAsync("https://playwright.dev");
-
-            // Expect a title "to contain" a substring.
-            await Expect(Page).ToHaveTitleAsync(new Regex("Playwright"));
-
-            // create a locator
-            var getStarted = Page.Locator("text=Get Started");
-
-            // Expect an attribute "to be strictly equal" to the value.
-            await Expect(getStarted).ToHaveAttributeAsync("href", "/docs/intro");
-
-            // Click the get started link.
-            await getStarted.ClickAsync();
-
-            // Expects the URL to contain intro.
-            await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
+            int start = -5;
+            int stop = 5;
+            DataService ds = new DataService();
+            double[] wait = { 7.76, 7.36, 7.26, 7.9, 0, 2, 4.35, 5.63, 6.49, 6.49, 6.32 };
+            double[] res = ds.GetMassFunction(start, stop);
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
