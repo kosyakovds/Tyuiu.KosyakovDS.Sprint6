@@ -13,15 +13,8 @@ namespace Tyuiu.KosyakovDS.Sprint6.Task4.V18.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x == -1)
-                {
-                    valueArray[cnt++] = 0;
-                }
-                else
-                {
-                    y = Math.Round((2 * x - 3) / (Math.Cos(x) + x) + 5, 2);
-                    valueArray[cnt++] = y;
-                }
+                y = Math.Round((2 * x - 3) / (Math.Cos(x) + x) + 5, 2);
+                valueArray[cnt++] = y;
             }
 
             return valueArray;
